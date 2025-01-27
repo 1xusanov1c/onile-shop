@@ -25,7 +25,7 @@ function renderCard(){
 
         let soni = document.createElement('p')
         soni.classList.add('font-bold')
-        soni.textContent = "Mahsulot soni: " + prod.quantity;
+        soni.textContent = "Mahsulot soni: " + prod.quantity + "$";
 
         let narxi = document.createElement('p')
         narxi.classList.add('font-bold')
