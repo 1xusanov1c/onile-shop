@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container w-10/12 mx-auto mt-10 flex gap-[6px] items-center">
+       <p><i class="fa-solid fa-cart-shopping "></i></p><span id="count">0</span>
+       <button class="border bg-blue-600 text-white rounded-lg py-2 px-3 active:bg-blue-300 right-1 " onclick="btnApp()">Mahsulot qo'shish</button>
+    </div>
+    <div class="container w-10/12 mx-auto mt-10">
+        <div id="cards" class="grid grid-cols-4 gap-[20px] ">
+            <!-- <div class=" gap-[15px] border ">
+                <img class="w-[300px]" src="https://hotmot.ru/upload/iblock/451/45118ecf6ecfa8e118b30581ba558f95.jpg" alt="">
+                <div class=" py-1 px-3 ">
+                    <p> moto BMW 1000cc</p>
+                    <p> Maxsulot soni: 12</p>
+                    <p>Maxsulot narxi: 3000</p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <div class=" container mx-auto px-4 items-center mt-5">
+        <div class="flex  flex-col text-center gap-[15px] hidden " id="input">
+            <input type="text" placeholder="Mahsulot nomi" id="product">
+            <input type="text" placeholder="Mahsulot rasmi" id="productImage">
+            <input type="number" placeholder="Mahsulot narxi" id="price">
+            <input type="number" placeholder="Mahsulot soni " id="quantity">
+
+            <button class="bg-blue-600 py-2 px-3 text-white active:bg-blue-300 mb-5" onclick="appBtn()">Qo'shish</button>
+        </div>
+    </div>
+    
+    <script src="./js/products.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
