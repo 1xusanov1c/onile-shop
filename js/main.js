@@ -13,7 +13,7 @@ function renderCard(){
         card_div.classList.add('gap-[15px]', 'border' , 'rounded-lg')
 
         let images = document.createElement('img')
-        images.classList.add('w-[300px' , 'rounded-lg')
+        images.classList.add('w-[300px' , 'rounded-lg', 'object-cover')
         images.src = prod.productImage
         images.alt = prod.product
 
