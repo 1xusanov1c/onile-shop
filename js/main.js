@@ -91,7 +91,7 @@ function btnApp(){
 function appBtn(){
     try {
         if(!product.value) throw Error ("Mahsulot nomni kirting")
-        if(!productImage.value) throw Error ("Mahsulot rasmni kirting")
+        if(!productImage.value) throw Error ("Rasmni URLni kirting")
         if(!price.value) throw Error ("Mahsulot narxini kirting")
         if(!quantity.value) throw Error ("Mahsulot sonini kirting")
 
